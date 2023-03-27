@@ -1,0 +1,15 @@
+.yandexmap {
+  height: 700px;
+  width: 100%;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+@media (max-width: 575px) {
+
+  .yandexmap {
+    height: 320px;
+  }
+}

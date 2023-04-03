@@ -1,0 +1,159 @@
+body {
+  background-image: url('../studentstable/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+  line-height: 100px;
+  font-size: 100px;
+}
+
+.inputs-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputs-form__input {
+  margin: 15px;
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+  color: black;
+  background-color: aqua;
+}
+
+.inputs-form__btn {
+  position: relative;
+  margin: 15px;
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  background-color: rgb(33, 186, 186);
+}
+
+.inputs-form__input:hover {
+  opacity: 0.9;
+}
+
+.inputs-form__input:active {
+  opacity: 1;
+}
+
+.inputs-form__input:focus {
+  opacity: 1;
+  outline: 1px solid #08349add;
+}
+
+.inputs-form__btn:hover {
+  opacity: 0.9;
+}
+
+.inputs-form__label {
+  position: relative;
+}
+
+.inputs-form__descr {
+  display: inline-block;
+  position: absolute;
+  top: -44px;
+  left: 15px;
+  color: aqua;
+  font-size: 22px;
+}
+
+.students-list-index {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.students-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.students-list__item {
+  position: relative;
+  padding: 5px;
+  margin: 0;
+  width: 450px;
+  height: 30px;
+  list-style: none;
+  color: black;
+  outline: 1px solid rgb(0, 0, 0);
+  font-size: 22px;
+  background-color: aqua;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  opacity: 0.7;
+}
+
+.title-two {
+  padding-left: 15px;
+  color: white;
+}
+
+.invalid-field {
+  border: 5px solid red;
+}
+
+.invalid-descr {
+  display: none;
+  position: absolute;
+  width: 900px;
+  top: -20px;
+  left: 0;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.571);
+}
+
+.js-startYear-invalid {
+  display: inline-block;
+  top: -40px;
+}
+
+.js-birthsday-invalid {
+  display: inline-block;
+}
+
+.removeButton {
+cursor: pointer;
+position: absolute;
+color: transparent;
+font-size: 0;
+line-height: 0;
+top: 29%;
+right: 10px;
+width: 15px;
+height: 15px;
+background-color: red;
+}
+
+.removeButton:hover {
+  opacity: 0.5;
+}
+
+.removeButton:active {
+  opacity: 1;
+  transform: scale(1.3);
+}

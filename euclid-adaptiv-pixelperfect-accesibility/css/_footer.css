@@ -1,0 +1,461 @@
+.footer {
+    background-color: var(--black);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-left {
+    max-width: 252px;
+    min-height: 494px;
+    margin-right: 349px;
+}
+
+.footer__logo {
+    width: 224px;
+    height: 72px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer__list {
+    margin-bottom: 90px;
+}
+
+.footer__list-item-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    color: var(--grey-light);
+    transition: color .3s;
+}
+
+.footer__list-item-link:hover {
+    cursor: pointer;
+    color: var(--orange-light);
+    outline: none;
+}
+
+.footer__list-item-link:focus:not(:hover) {
+    outline: 2px solid var(--orange-light);
+    outline-offset: 5px;
+}
+
+.footer__list-item-link:active {
+    color: var(--orange-dark);
+}
+
+.footer__social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.footer__social-link {
+    display: flex;
+    fill: var(--grey);
+    transition: fill .3s;
+}
+
+.footer__social-link:hover {
+    cursor: pointer;
+    fill: var(--orange);
+    outline: none;
+    transition: fill 0.3s ease-in-out;
+}
+
+.footer__social-link:focus:not(:hover) {
+    outline: 2px solid var(--orange);
+    outline-offset: 3px;
+    transition: fill 0.3s ease-in-out;
+}
+
+.footer__social-link:active {
+    fill: var(--orange-dark);
+}
+
+
+.footer__social-link:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer-center {
+    max-width: 570px;
+    min-height: 494px;
+    margin-right: 236px;
+}
+
+.footer__title {
+    margin: 0;
+    margin-bottom: 25px;
+    max-width: 570px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--grey-light);
+}
+
+.footer__form-input {
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 24px;
+    width: 570px;
+    min-height: 60px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 16px;
+    color: var(--grey-light);
+    background-color: var(--grey-dark);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer__form-input:focus,
+.footer__form-input:hover {
+    outline: none;
+    background-color: var(--grey);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer__form-input:active {
+    outline: none;
+    background-color: var(--grey);
+    color: var(--white);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.footer__form-textarea {
+    padding: 0;
+    padding-top: 23px;
+    padding-left: 24px;
+    width: 570px;
+    max-height: 150px;
+    margin-bottom: 28px;
+    border: none;
+    border-radius: 16px;
+    resize: none;
+    color: var(--grey-light);
+    background-color: var(--grey-dark);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer__form-textarea:focus,
+.footer__form-textarea:hover {
+    outline: none;
+    background-color: var(--grey);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer__form-textarea:active {
+    outline: none;
+    background-color: var(--grey);
+    color: var(--white);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.footer__form-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 570px;
+}
+
+.footer__form-btn {
+    padding: 19px 52px;
+    margin-right: 22px;
+    transition: background-color .3s ease;
+}
+
+.footer__form-btn:focus,
+.footer__form-btn:hover {
+    outline: none;
+    background-color: var(--orange-light);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer__form-btn:active {
+    outline: none;
+    background-color: var(--orange-dark);
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.footer__check-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.footer__form-check-tick {
+    position: relative;
+    display: inline-block;
+    margin-right: 4px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--grey-light);
+    border-radius: 2px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.footer__form-check-tick::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7px;
+    height: 4px;
+    border-left: 2px solid #97EE3F;
+    border-bottom: 2px solid #97EE3F;
+    opacity: 0;
+    transform: translate(-50%, -60%) rotate(-45deg) scale(2);
+    transition-property: opacity, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.footer__form-check:checked ~ .footer__form-check-tick::before {
+    opacity: 1;
+    transform: translate(-50%, -60%) rotate(-45deg) scale(1);
+}
+
+.footer__form-check:not(:checked) ~ .footer__form-check-tick:focus {
+  border: 2px solid var(--orange);
+}
+
+.footer__form-checkbox-descr {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--grey-light);
+}
+
+.footer__descr {
+    margin: 0;
+    padding: 0;
+    max-width: 363px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--grey-light);
+}
+
+@media (max-width: 1680px) {
+
+  .footer-right {
+    display: none;
+  }
+
+  .footer-container {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .footer-left {
+    margin-right: 0;
+  }
+
+  .footer-center {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1280px) {
+  .footer-left {
+    margin: 0;
+  }
+
+  .footer-center {
+    margin: 0;
+  }
+
+  .footer-right {
+    display: none;
+  }
+
+  .footer-container {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .footer__form-input {
+    width: 100%;
+  }
+
+  .footer__form-textarea {
+    width: 100%;
+  }
+
+  .footer-left {
+    max-width: 40%;
+  }
+
+  .footer-center {
+    max-width: 59%;
+  }
+
+  .footer__form-btn {
+    padding: 19px 41px;
+    margin-right: 18px;
+  }
+
+  .footer__form-wrapper {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .footer__list {
+    display: none;
+  }
+
+  .footer-container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .footer-left {
+    max-width: 100%;
+    min-height: 100px;
+  }
+
+  .footer-center {
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+
+  .footer__form-wrapper {
+    justify-content: space-between;
+  }
+
+  .footer__form {
+    width: calc(100% - 19.012%);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .footer__form-btn {
+    padding: 19px 38px;
+  }
+
+  .footer-container {
+    padding-top: 52px;
+  }
+
+  .footer-logo {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 630px) {
+
+  .footer-container {
+    align-items: center;
+    padding-top: 33px;
+  }
+
+  .footer__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .footer__form {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer__form-wrapper {
+    justify-content: center;
+  }
+
+  .footer__form-btn {
+    margin-bottom: 12px;
+  }
+
+  .footer__form-checkbox-descr {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .footer-center {
+    margin-bottom: 2px;
+  }
+
+  .footer__title {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .footer__form {
+    width: 100%;
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .footer__form-input {
+    padding-top: 2px;
+    padding-left: 20px;
+  }
+
+  .footer__form-textarea {
+    margin-bottom: 15px;
+    padding-top: 23px;
+    padding-left: 20px;
+  }
+
+  .footer__form-wrapper {
+    justify-content: flex-start;
+  }
+
+  .footer__form-btn {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 12px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .footer__form-checkbox-descr {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .footer__form-check-tick {
+    margin-right: 10px;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer__logo {
+    margin-bottom: 21px;
+    width: 131px;
+    height: 42px;
+  }
+
+  .footer__social-link {
+    width: 40px;
+    height: 40px;
+  }
+}

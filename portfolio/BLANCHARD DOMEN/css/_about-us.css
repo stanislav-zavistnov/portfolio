@@ -1,0 +1,49 @@
+.about-us-container {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.about-us__title {
+  margin-bottom: 16px;
+}
+
+.about-us__descr {
+  padding: 0;
+  margin: 0;
+  max-width: 1080px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--title-black);
+}
+
+@media (max-width: 1600px) {
+
+  .about-us-container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .about-us-container {
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-bottom: 41px;
+    padding-left: 15px;
+  }
+
+  .about-us__title {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .about-us__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+

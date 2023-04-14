@@ -1,0 +1,69 @@
+.contacts-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+}
+
+.contacts-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contacts-descr {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contacts-icons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts-icons__link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity .3s ease-in-out
+}
+
+.contacts-icons__link:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-icons__link:hover {
+  opacity: 0.7;
+  transition: opacity .3s ease-in-out
+}
+
+.contacts-icons__link--tg {
+  background-image: url('../img/tg.svg');
+}
+
+.contacts-icons__link--gmail {
+  background-image: url('../img/gmail.svg');
+}
+
+.contacts-icons__link--wa {
+  background-image: url('../img/wa.svg');
+}
+
+.contacts-icons__link-descr {
+  padding-left: 45px;
+  color: white;
+}
+
+.allrights-descr {
+  padding: 2px 0;
+  text-align: center;
+  font-size: 9px;
+  font-weight: 600;
+}

@@ -1,0 +1,107 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('../03_js-animation/fonts/');
+  src: local('TT Firs Neue Bold'), local('TTFirsNeue-Bold'),
+    url('../fonts/') format('embedded-opentype'),
+    url('../fonts/TTFirsNeue-Bold.woff2') format('woff2'),
+    url('../fonts/TTFirsNeue-Bold.woff') format('woff'),
+    url('../fonts/TTFirsNeue-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('../03_js-animation/fonts/TTFirsNeue-Regular.eot');
+  src: local('TT Firs Neue Regular'), local('TTFirsNeue-Regular'),
+    url('../fonts/TTFirsNeue-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTFirsNeue-Regular.woff2') format('woff2'),
+    url('../fonts/TTFirsNeue-Regular.woff') format('woff'),
+    url('../fonts/TTFirsNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "TT Firs Neue", sans-serif;
+  font-weight: 400;
+}
+
+.visually-hidden {
+    position: absolute;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 160px;
+  padding-left: 160px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.display-none {
+  display: none;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.bomzh {
+  width: 100vw;
+  height: 100vh;
+}

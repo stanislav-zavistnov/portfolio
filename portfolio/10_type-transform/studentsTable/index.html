@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>students table</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">База Данных Студентов</h1>
+    <div class="inputs-wrapper">
+      <form class="inputs-form">
+        <input class="inputs-form__input js-name" type="text" placeholder="Имя">
+        <input class="inputs-form__input js-surname" type="text" placeholder="Фамилия">
+        <input class="inputs-form__input js-middlename" type="text" placeholder="Отчество">
+        <label class="inputs-form__label" for="">
+          <input class="inputs-form__input js-birthsday" type="date" placeholder="Дата рождения" min="1900-01-01">
+          <span class="inputs-form__descr">Дата рождения</span>
+        </label>
+        <input class="inputs-form__input js-yearStart" type="number" placeholder="Год начала обучения, например 2000" min="2000">
+        <input class="inputs-form__input js-faculty" type="text" placeholder="Факультет">
+        <button class="inputs-form__btn js-submit" type="button">
+          Добавить студента
+          <span class="invalid-descr bd">выходит, студент из 19ого века, либо еще не родился, либо вообще не родился</span>
+          <span class="invalid-descr sy">университет начал работу в 2000м, а поступление не позже текущего года</span>
+        </button>
+      </form>
+    </div>
+    <div class="searching-wrapper">
+      <h2 class="title-two">Показать Студентов по</h2>
+      <form class="inputs-form">
+        <input class="inputs-form__input js-search-name" type="text" placeholder="Имени">
+        <input class="inputs-form__input js-search-surname" type="text" placeholder="Фамилии">
+        <input class="inputs-form__input js-search-middlename" type="text" placeholder="Отчеству">
+        <input class="inputs-form__input js-search-faculty" type="text" placeholder="Факультету">
+        <input class="inputs-form__input js-search-yearStart" type="number" placeholder="Году начала обучения, например 2000">
+        <input class="inputs-form__input js-search-yearFinish" type="number" placeholder="Году окончания обучения">
+        <button class="inputs-form__btn js-search-submit" type="button">
+          Показать
+        </button>
+      </form>
+    </div>
+    <div class="students-table-index">
+      <ul class="students-list-index">
+        <li class="students-list__item clickable js-fullnames">ФИО СТУДЕНТА</li>
+        <li class="students-list__item clickable js-birthsdays">ДАТА РОЖДЕНИЯ (ВОЗРАСТ)</li>
+        <li class="students-list__item clickable js-yearsOfstudies">ГОДЫ ОБУЧЕНИЯ (КУРС)</li>
+        <li class="students-list__item clickable js-faculties">ФАКУЛЬТЕТ</li>
+      </ul>
+    </div>
+    <div class="students-table"></div>
+  </div>
+</body>
+
+</html>

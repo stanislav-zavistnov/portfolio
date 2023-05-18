@@ -1,0 +1,162 @@
+.hero-cards {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 100;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.076) 21.73%), #000000;
+  box-shadow: 0px -17px 30px rgba(255, 255, 255, 0.35);
+}
+
+.hero-cards-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
+
+.hero-cards-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-cards-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-cards-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.hero-cards-list__item {
+  padding: 35px;
+  width: 300px;
+  height: 400px;
+  border: 1px solid white;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.33);
+}
+
+.hero-cards-list__item-img {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 38px;
+  margin-left: auto;
+}
+
+.hero-cards-list__item-title {
+  height: 52px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.hero-cards-list__item-descr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1366px) {
+
+  .hero-cards-list__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .hero-cards-list__item {
+    padding: 20px;
+    width: 280px;
+    height: 375px;
+  }
+
+  .hero-cards-list__item-img {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .hero-cards-list {
+    flex-wrap: wrap;
+  }
+
+  .hero-cards-list__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-cards {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hero-cards-list__item {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 280px;
+    height: 325px;
+  }
+
+  .hero-cards-list__item-img {
+    width: 75px;
+  }
+
+  .hero-cards-list__item-title {
+    margin-bottom: 6px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .hero-cards-list__item-descr {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .hero-cards-title {
+    font-size: 25px;
+  }
+
+  .hero-cards-list {
+    flex-direction: column;
+  }
+
+  .hero-cards-list__item {
+    margin: 0;
+    width: 240px;
+    height: 300px;
+  }
+
+  .hero-cards-list__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-cards-list__item-img {
+    width: 50px;
+  }
+
+  .hero-cards-list__item-title {
+    margin-bottom: 6px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .hero-cards-list__item-descr {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

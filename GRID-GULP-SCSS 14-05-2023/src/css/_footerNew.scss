@@ -1,0 +1,157 @@
+.footer {
+  background-color: $black;
+}
+
+.footer-container {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 202px;
+}
+
+.footer-logo-background {
+  display: none;
+}
+
+.footer-logo {
+  z-index: 100;
+}
+
+.footer-logo-descr {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $input-grey;
+  z-index: 100;
+}
+
+.footer-descr-wrap {
+  margin-right: auto;
+  width: 361px;
+}
+
+.footer-descr-text {
+  @include resetPaddingMargin();
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $grey;
+}
+
+.footer-social-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social-descr {
+  @include resetPaddingMargin();
+  margin-bottom: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $grey;
+}
+
+.footer-social-links-wrap {
+  display: flex;
+  padding-left: 21px;
+}
+
+.footer-cosial-link {
+  margin-right: 20px;
+  fill: $grey;
+  transition: fill .3s ease-in-out
+}
+
+.footer-cosial-link:hover {
+  fill: $orange;
+  transition: fill .3s ease-in-out
+}
+
+.footer-cosial-link:focus {
+  outline: none;
+  fill: $orange-focus;
+  transition: fill .3s ease-in-out
+}
+
+.footer-cosial-link:active {
+  fill: $orange-active;
+  transition: fill .3s ease-in-out
+}
+
+.footer-cosial-link__icon {
+  fill: inherit;
+}
+
+@media (max-width: 1366px) {
+
+  .footer-logo-wrap {
+    margin-right: 133px;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .footer-container {
+    padding-right: 27px;
+    padding-left: 27px;
+    justify-content: space-between;
+  }
+
+  .footer-logo-wrap {
+    margin-right: 0;
+  }
+
+  .footer-descr-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .footer-container {
+    padding-top: 32px;
+    padding-right: 21px;
+    padding-left: 21px;
+    padding-bottom: 13px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo-wrap {
+    align-items: center;
+  }
+
+  .footer-logo-background {
+    display: inline-block;
+    position: absolute;
+    top: -14px;
+    bottom: -14px;
+    width: 100vw;
+    background-color: $header-bottom-background;
+  }
+
+  .footer-social-wrap {
+    margin-bottom: 40px;
+  }
+
+  .footer-logo-descr {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новотрансфер</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script defer src="js/animation.js"></script>
+  <script defer src="js/swiper1.js"></script>
+  <script defer src="js/swiper2.js"></script>
+  <script defer src="js/swiper3.js"></script>
+  <script defer src="js/scrollappearence.js"></script>
+</head>
+
+<body id="element" class="body">
+  <h1 class="visually-hidden">
+    Новотрансфер
+  </h1>
+  <header class="header">
+    <div class="header-text">
+      <p class="header-text__descr element-animation">
+        Пусть Ваши ценности совпадают с ценностями ваших партнёров и клиентов
+      </p>
+      <img class="header-text__img element-animation" src="img/logo.svg" alt="логотип Новотрансфер">
+      <p class="header-text__descr element-animation">
+        с 2012 года осуществляет услуги юридическим лицам и компаниям по перевозке пассажиров в любой точке
+        мира по стандартам SLA
+      </p>
+    </div>
+  </header>
+  <main>
+    <section class="autopark">
+      <div class="autopark-wrap">
+        <div class="autopark-text element-animation">
+          <h2 class="autopark-text__title">
+            Автопарк
+          </h2>
+          <p class="autopark-text__descr">
+            Мы предоставляем транспорт с водителем от легкового автомобиля до автобусов любой вместимости
+          </p>
+        </div>
+        <div class="autopark-nav element-animation">
+          <div class="autopark-nav__img"></div>
+          <button class="autopark-nav__btn btn-reset">
+            <span class="autopark-nav__btn-text">
+              Посмотреть&nbsp;автопарк
+            </span>
+            <span class="autopark-nav__btn-icon js-list-closed"></span>
+          </button>
+        </div>
+      </div>
+      <div class="autopark-cards-wrap">
+        <ul class="autopark-list list-reset">
+          <li class="autopark-list__item">
+            <img class="autopark-list__item-img" src="img/autopark-standart.jpg" alt="">
+            <p class="autopark-list__item-title">
+              Стандарт
+            </p>
+            <p class="autopark-list__item-descr">
+              Skoda Rapid и подобные
+            </p>
+          </li>
+          <li class="autopark-list__item">
+            <img class="autopark-list__item-img" src="img/autopark-business.jpg" alt="">
+            <p class="autopark-list__item-title">
+              Бизнес
+            </p>
+            <p class="autopark-list__item-descr">
+              Toyota Camry и подобные
+            </p>
+          </li>
+          <li class="autopark-list__item">
+            <img class="autopark-list__item-img" src="img/autopark-business-plus.jpg" alt="">
+            <p class="autopark-list__item-title">
+              Бизнес +
+            </p>
+            <p class="autopark-list__item-descr">
+              Mercedes-Benz E-Class и подобные
+            </p>
+          </li>
+          <li class="autopark-list__item">
+            <img class="autopark-list__item-img" src="img/autopark-representative.jpg" alt="">
+            <p class="autopark-list__item-title">
+              Представительский
+            </p>
+            <p class="autopark-list__item-descr">
+              Mercedes-Benz S-Class W222 и подобные
+            </p>
+          </li>
+          <li class="autopark-list__item">
+            <img class="autopark-list__item-img" src="img/autopark-bus.jpg" alt="">
+            <p class="autopark-list__item-title">
+              Автобусы
+            </p>
+            <p class="autopark-list__item-descr">
+              Yutong и подобные
+            </p>
+          </li>
+          <li class="autopark-list__item">
+            <img class="autopark-list__item-img" src="img/autopark-minivan.jpg" alt="">
+            <p class="autopark-list__item-title">
+              Минивэн
+            </p>
+            <p class="autopark-list__item-descr">
+              Volkswagen Caravelle и подобные
+            </p>
+          </li>
+          <li class="autopark-list__item">
+            <img class="autopark-list__item-img" src="img/autopark-microbus.jpg" alt="">
+            <p class="autopark-list__item-title">
+              Микроавтобус
+            </p>
+            <p class="autopark-list__item-descr">
+              Mercedes-Benz Sprinter и подобные
+            </p>
+          </li>
+          <li class="autopark-list__item">
+            <img class="autopark-list__item-img" src="img/autopark-truck.jpg" alt="">
+            <p class="autopark-list__item-title">
+              Грузовой
+            </p>
+            <p class="autopark-list__item-descr">
+              грузовые авто
+            </p>
+          </li>
+          <li class="autopark-list__item">
+            <img class="autopark-list__item-img" src="img/autopark-minivan-vip.jpg" alt="">
+            <p class="autopark-list__item-title">
+              Минивэн VIP
+            </p>
+            <p class="autopark-list__item-descr">
+              Mercedes-Benz V-Class и подобные
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="autopark-cards-slider-wrap">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider-cards-wrap">
+                <div class="slider-card">
+                  <img class="slider-card__img" src="img/autopark-standart.jpg" alt="">
+                  <p class="slider-card__title">
+                    Стандарт
+                  </p>
+                  <p class="slider-card__descr">
+                    Skoda Rapid и подобные
+                  </p>
+                </div>
+                <div class="slider-card">
+                  <img class="slider-card__img" src="img/autopark-business.jpg" alt="">
+                  <p class="slider-card__title">
+                    Бизнес
+                  </p>
+                  <p class="slider-card__descr">
+                    Toyota Camry и подобные
+                  </p>
+                </div>
+                <div class="slider-card">
+                  <img class="slider-card__img" src="img/autopark-business-plus.jpg" alt="">
+                  <p class="slider-card__title">
+                    Бизнес +
+                  </p>
+                  <p class="slider-card__descr">
+                    Mercedes-Benz E-Class и подобные
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-cards-wrap">
+                <div class="slider-card">
+                  <img class="slider-card__img" src="img/autopark-representative.jpg" alt="">
+                  <p class="slider-card__title">
+                    Представительский
+                  </p>
+                  <p class="slider-card__descr">
+                    Mercedes-Benz S-Class W222 и подобные
+                  </p>
+                </div>
+                <div class="slider-card">
+                  <img class="slider-card__img" src="img/autopark-bus.jpg" alt="">
+                  <p class="slider-card__title">
+                    Автобусы
+                  </p>
+                  <p class="slider-card__descr">
+                    Yutong и подобные
+                  </p>
+                </div>
+                <div class="slider-card">
+                  <img class="slider-card__img" src="img/autopark-minivan.jpg" alt="">
+                  <p class="slider-card__title">
+                    Минивэн
+                  </p>
+                  <p class="slider-card__descr">
+                    Volkswagen Caravelle и подобные
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-cards-wrap">
+                <div class="slider-card">
+                  <img class="slider-card__img" src="img/autopark-microbus.jpg" alt="">
+                  <p class="slider-card__title">
+                    Микроавтобус
+                  </p>
+                  <p class="slider-card__descr">
+                    Mercedes-Benz Sprinter и подобные
+                  </p>
+                </div>
+                <div class="slider-card">
+                  <img class="slider-card__img" src="img/autopark-truck.jpg" alt="">
+                  <p class="slider-card__title">
+                    Грузовой
+                  </p>
+                  <p class="slider-card__descr">
+                    грузовые авто
+                  </p>
+                </div>
+                <div class="slider-card">
+                  <img class="slider-card__img" src="img/autopark-minivan-vip.jpg" alt="">
+                  <p class="slider-card__title">
+                    Минивэн VIP
+                  </p>
+                  <p class="slider-card__descr">
+                    Mercedes-Benz V-Class и подобные
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages-wrap">
+        <h2 class="advantages-title element-animation">
+          Почему мы и наши преимущества
+        </h2>
+        <div class="advantages-cards">
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-1.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Комфорт
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-2.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Пунктуальность
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-3.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Прозрачность и конкурентные цены
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-4.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Круглосуточная поддержка
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-5.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Интеграция заказов
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-6.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Возможность оформления online на сайте
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-7.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Персональный менеджер
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-8.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Профессиональные и опытные водители
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-9.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Постоплата и безналичный расчет
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-10.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Собственный отдел контроля качества
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-11.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Дополнительное страхование всех поездок
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-12.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Работа с НДС и без НДС
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-two">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-two-slide">
+              <div class="swiper-two-slide__cards-wrap">
+                <div class="advantages-slide-card element-animation">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-1.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Комфорт
+                    </p>
+                  </div>
+                </div>
+                <div class="advantages-slide-card element-animation">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-2.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Пунктуальность
+                    </p>
+                  </div>
+                </div>
+                <div class="advantages-slide-card element-animation">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-3.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Прозрачность и конкурентные цены
+                    </p>
+                  </div>
+                </div>
+                <div class="advantages-slide-card element-animation">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-4.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Круглосуточная поддержка
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-two-slide">
+              <div class="swiper-two-slide__cards-wrap">
+                <div class="advantages-slide-card">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-5.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Интеграция заказов
+                    </p>
+                  </div>
+                </div>
+                <div class="advantages-slide-card">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-6.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Возможность оформления online на сайте
+                    </p>
+                  </div>
+                </div>
+                <div class="advantages-slide-card">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-7.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Персональный менеджер
+                    </p>
+                  </div>
+                </div>
+                <div class="advantages-slide-card">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-8.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Профессиональные и опытные водители
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-two-slide">
+              <div class="swiper-two-slide__cards-wrap">
+                <div class="advantages-slide-card">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-9.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Постоплата и безналичный расчет
+                    </p>
+                  </div>
+                </div>
+                <div class="advantages-slide-card">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-10.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Собственный отдел контроля качества
+                    </p>
+                  </div>
+                </div>
+                <div class="advantages-slide-card">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-11.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Дополнительное страхование всех поездок
+                    </p>
+                  </div>
+                </div>
+                <div class="advantages-slide-card">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-12.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Работа с НДС и без НДС
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination-two"></div>
+        </div>
+        <h2 class="advantages-title element-animation">
+          Дополнительные услуги:
+        </h2>
+        <div class="advantages-cards">
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-13.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Гид-переводчик
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-14.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Бронирование VIP-залов
+              </p>
+            </div>
+          </div>
+          <div class="advantages-card element-animation">
+            <img class="advantages-card__img" src="img/advantages-15.svg" alt="">
+            <div class="advantages-card-text-wrap">
+              <p class="advantages-card__descr">
+                Fast Track
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-three">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-two-slide">
+              <div class="swiper-three-slide__cards-wrap">
+                <div class="advantages-slide-card element-animation">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-13.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Гид-переводчик
+                    </p>
+                  </div>
+                </div>
+                <div class="advantages-slide-card element-animation">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-14.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Бронирование VIP-залов
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-two-slide">
+              <div class="swiper-two-slide__cards-wrap">
+                <div class="advantages-slide-card">
+                  <img class="advantages-slide-card__img advantages-slide-card__img--slider" src="img/advantages-15.svg" alt="">
+                  <div class="advantages-slide-card-text-wrap advantages-slide-card-text-wrap--slider">
+                    <p class="advantages-slide-card__descr advantages-slide-card__descr--slider">
+                      Fast Track
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination-three"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mission">
+      <div class="mission-wrap">
+        <p class="mission-text element-animation">
+          Наша миссия:
+        </p>
+        <p class="mission-descr element-animation">
+          Ваш залог успеха — быть в нужное время, в нужном месте
+        </p>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts-title element-animation">
+        Контактная информация
+      </h2>
+      <div class="contacts-text-wrap">
+        <div class="left-side element-animation">
+          <p class="left-side__text-type">
+            Главный офис компании расположен:
+          </p>
+          <p class="left-side__text-descr">
+            г. Какой-то,<br>ул. Случайная-улица, 123, офис 6
+          </p>
+          <p class="left-side__text-type">
+            Круглосуточная служба поддержки:
+          </p>
+          <p class="left-side__text-descr">
+            8 (800) 000-00-00
+          </p>
+          <a class="left-side__text-link" href="##">
+            zakaz@nazvaniecomp.com
+          </a>
+        </div>
+        <div class="right-side element-animation">
+          <p class="left-side__text-type">
+            Директор по развитию:
+          </p>
+          <p class="left-side__text-descr">
+            Имя Фамилия
+          </p>
+          <p class="left-side__text-type">
+            +7 (913) 000-00-00
+          </p>
+          <a class="left-side__text-link" href="##">
+            ntgroup2@nazvaniecomp.com
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="try">
+      <div class="try-wrap">
+        <h2 class="try-title element-animation">
+          Хотите попробовать?!
+        </h2>
+        <p class="try-descr element-animation">
+          Оставьте свой контакт и мы обязательно с Вами свяжемся
+        </p>
+        <div class="try-form-wrap element-animation">
+          <form class="try-form">
+            <input class="try-form__input" type="text" placeholder="Имя">
+            <input class="try-form__input" type="text" placeholder="Компания">
+            <input class="try-form__input" type="tel" placeholder="Телефон">
+            <input class="try-form__input" type="email" placeholder="Почта">
+            <button class="try-form__btn btn-reset">
+              <span class="try-form__btn-text">
+                Отправить
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <img class="try-bottom-background" src="img/try-img.jpg" alt="">
+    </section>
+  </main>
+</body>
+
+</html>

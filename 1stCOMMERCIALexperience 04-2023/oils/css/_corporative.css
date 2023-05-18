@@ -1,0 +1,101 @@
+.corporative-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url('../img/corp-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.corporative-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+}
+
+.corporative-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.corporative-text__descr {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.corporative-text__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.corporative-text__list-item {
+  margin-bottom: 5px;
+  padding-left: 22px;
+  background-image: url('../img/check-min.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.corporative-text__list-item-descr {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.corporative-text__link:hover .corporative-text__link-descr,
+.corporative-text__link:focus .corporative-text__link-descr {
+  color: crimson;
+  opacity: 1;
+  transition: color .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.corporative-text__link:active .corporative-text__link-descr {
+  opacity: 0.5;
+  color: crimson;
+  transition: color .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.corporative-text__link:hover .corporative-text__link-icon,
+.corporative-text__link:focus .corporative-text__link-icon,
+.corporative-text__link:active .corporative-text__link-icon {
+  fill: rgb(0, 255, 60);
+  transition: fill .3s ease-in-out;
+}
+
+.corporative-text__link-descr {
+  margin-right: 8px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 35px;
+  color: black;
+  opacity: 1;
+  transition: color .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.corporative-text__link-icon {
+  fill: red;
+  animation-name: scale2x;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  transition: fill .3s ease-in-out;
+}
+
+@keyframes scale2x {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

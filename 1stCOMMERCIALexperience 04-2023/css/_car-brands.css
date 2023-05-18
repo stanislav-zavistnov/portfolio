@@ -1,0 +1,76 @@
+.car-brands {
+  position: relative;
+  z-index: 12;
+  background-color: white;
+  box-shadow: 0px 12px 11px 0px rgb(0 0 0 / 31%);
+}
+
+.car-brands-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
+
+.swiper {
+  padding: 15px 0;
+  background: linear-gradient(180deg, #000000 0%, rgba(136, 136, 136, 0) 27.08%, rgba(255, 255, 255, 0) 69.64%, #cfcfcf 100%);
+}
+
+.swiper-slide img {
+  width: 50px;
+  height: 50px;
+  filter: grayscale(100%);
+}
+
+.swiper-wrapper {
+  padding-top: 10px;
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.car-brands-text__descr {
+  font-family: 'Roboto Slab';
+  padding-left: 35px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  color: white;
+  background-image: url('../img/check.svg');
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.car-brands-text__descr--bold {
+  font-weight: 600;
+}
+
+.car-brands-text__descr-link {
+  font-family: 'Roboto Slab';
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 35px;
+  color: white;
+  transition: color .3s ease-in-out;
+}
+
+.car-brands-text__descr-link:hover,
+.car-brands-text__descr-link:focus {
+  color: black;
+  transition: color .3s ease-in-out;
+}
+
+.car-brands-text__descr-link:active {
+  color: gray;
+  transition: color .3s ease-in-out;
+}
+
+/* @media (max-width: 768px) {
+
+  .car-brands {
+    display: none;
+  }
+} */

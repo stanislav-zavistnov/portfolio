@@ -1,0 +1,95 @@
+.techcenter-cards {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0px 12px 11px 0px rgb(0 0 0 / 31%);
+}
+
+.techcenter-cards-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.techcenter-card {
+  margin-right: 40px;
+  margin-bottom: 30px;
+  width: 360px;
+  height: 500px;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  box-shadow: 12px 12px 30px 0px rgba(0, 0, 0, 0.62);
+}
+
+.techcenter-card__img {
+  box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.35);
+}
+
+.techcenter-card__text {
+  padding: 20px;
+}
+
+.techcenter-card__text-descr {
+  font-family: 'Roboto Slab';
+  font-weight: 600;
+  font-size: 21px;
+}
+
+@media (max-width: 1366px) {
+
+  .techcenter-cards-wrap {
+    justify-content: center;
+  }
+
+  .techcenter-cards {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .techcenter-cards {
+    padding-top: 40px;
+  }
+
+  .techcenter-card {
+    margin-right: 30px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .techcenter-card__text-descr {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .techcenter-cards-wrap {
+    flex-direction: column;
+  }
+
+  .techcenter-card {
+    margin-right: 0;
+  }
+
+  .techcenter-card:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .techcenter-card {
+    width: 280px;
+    height: 305px;
+  }
+
+  .techcenter-card__text-descr {
+    font-size: 12px;
+  }
+}

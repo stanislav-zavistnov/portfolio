@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.arrow-up {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 200;
+  bottom: 5%;
+  left: 1%;
+  background-image: url('../img/arrow-up.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  transition: opacity .3s ease-in-out;
+}
+
+.arrow-up:hover {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+@media (max-width: 1367px) {
+
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .arrow-up {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    left: auto;
+    bottom: 60px;
+  }
+
+  .arrow-up:hover,
+  .arrow-up:focus,
+  .arrow-up:active {
+    animation-name: opacity;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+  }
+
+  @keyframes opacity {
+    0% {
+      opacity: 0.5;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0.5;
+    }
+  }
+}

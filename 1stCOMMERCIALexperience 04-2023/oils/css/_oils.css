@@ -1,0 +1,154 @@
+.oils-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  opacity: 0;
+  animation-name: delayedAppearence;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+  animation-delay: 1.3s;
+}
+
+.oils-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.oils__list-item {
+  border-top: 1px solid #acacac;
+  border-bottom: 1px solid #acacac;
+}
+
+.oils__list-item:hover .oils__list-btn {
+  background-color: aliceblue;
+  transition: background-color .3s ease-in-out
+}
+
+.oils__list-btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: left;
+  outline: none;
+  background-color: transparent;
+  transition: color .3s ease, background-color .3s ease-in-out;
+}
+
+.oils__list-btn:hover,
+.oils__list-btn:focus-within {
+  color: var(--orange);
+}
+
+.oils__list-btn::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23CACACA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='black'/%3E%3C/svg%3E%0A");
+  transform: translateY(-50%);
+  transition: background-image .3s ease, transform .5s ease;
+}
+
+.oils__list-btn:hover::after,
+.oils__list-btn:focus::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23B6322D'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.oils__list-btn:active {
+  margin: -1px;
+  color: var(--black);
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23CACACA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z' fill='black'/%3E%3C/svg%3E%0A");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  transition: color .3s, background-image .3s, border-top .3s, border-bottom .3s;
+}
+
+.oils__list-btn:active::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23CACACA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+
+.oils__list-btn--br {
+  display: none;
+}
+
+.oils-content {
+  overflow: hidden;
+}
+
+.oils-content-wrap {
+  padding-top: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease, visibility .5s ease;
+  transition-delay: .3s;
+}
+
+.is-active .oils-content-wrap {
+  opacity: 1;
+  visibility: visible;
+}
+
+.is-active .oils__list-btn::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.oils-content-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.oils-content-list__item {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  width: 150px;
+  height: 185px;
+  flex-wrap: wrap;
+  border: 1px solid #acacac;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.oils-content-list__item-img {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.oils-content-list__item-title {
+  position: absolute;
+  font-weight: 700;
+  font-size: 15px;
+  bottom: 10px;
+  right: 3px;
+  width: 140px;
+  height: 50px;
+}
+
+.oils-content-list--tcl li {
+  height: 220px;
+}
+
+.oils-content-list--tcl h3 {
+  bottom: 40px;
+}
+
+@media (max-width: 576px) {
+
+  .oils-title {
+    font-size: 25px;
+  }
+}

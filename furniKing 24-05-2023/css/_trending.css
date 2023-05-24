@@ -1,0 +1,263 @@
+.trending,
+.products {
+  padding-bottom: 40px;
+}
+
+.trending__title {
+  margin-bottom: 45px;
+  text-align: center;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: var(--text);
+}
+
+.trending-links-wrap {
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.trending-links {
+  display: flex;
+  align-items: center;
+}
+
+.trending-links:not(:last-child) {
+  margin-right: 70px;
+}
+
+.trending-links {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--text-light);
+}
+
+.trending-links--active {
+  color: var(--greenMain);
+}
+
+.trending-cards-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.trending-card {
+  position: relative;
+  display: flex;
+  height: 390px;
+  flex-direction: column;
+}
+
+.trending-card:hover .trending-card-options-wrap {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.trending-card:focus .trending-card-options-wrap {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.trending-card__marker {
+  padding: 0 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  color: var(--white);
+  border-bottom-right-radius: 5px;
+}
+
+.trending-card__marker--new {
+  background-color: var(--blue);
+}
+
+.trending-card__marker--sale {
+  background-color: var(--greenMain);
+}
+
+.trending-card__marker--discount {
+  background-color: var(--red);
+}
+
+.trending-card-options-wrap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 45px;
+  right: 7px;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.trending-card-options-icon:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.trending-card-options-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--white);
+  transform: scale(1);
+  transition: transform .3s ease-in-out
+}
+
+.trending-card-options-icon:hover,
+.trending-card-options-icon:focus {
+  transform: scale(1.4);
+  transition: transform .3s ease-in-out
+}
+
+.trending-card__img {
+  margin-bottom: 15px;
+}
+
+.trending-card__type {
+  margin-bottom: 4px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--text-light);
+}
+
+.trending-card__name {
+  margin-bottom: 13px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--text);
+}
+
+.trending-card-cost-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trending-card-cost-prices {
+  display: flex;
+  align-items: center;
+}
+
+.trending-card-cost-prices__price {
+  margin-right: 7px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--greenMain);
+}
+
+.trending-card-cost-prices__price--last {
+  color: var(--text-light);
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.trending-card-cost-grade {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.trending-card-cost-grade__img:not(:last-child) {
+  margin-right: 3px;
+}
+
+@media (max-width: 1024px) {
+
+  .trending-card {
+    height: 310px;
+  }
+
+  .trending-card-options-wrap {
+    top: 10px;
+    transform: scale(0.8);
+  }
+
+  .trending-card__name {
+    height: 50px;
+  }
+
+  .trending-card-cost-wrap {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .trending {
+    padding-bottom: 20px;
+  }
+
+  .trending-links-wrap {
+    margin-bottom: 30px;
+  }
+
+  .trending-links:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .trending-links {
+    font-size: 17px;
+  }
+
+  .trending-cards-wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+
+  .trending, .products {
+    padding-top: 20px;
+  }
+
+  .products {
+    padding-top: 0;
+  }
+
+  .trending__title {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .trending-links:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  .trending-links {
+    font-size: 12px;
+  }
+
+  .trending-cards-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trending-card {
+    height: calc( (100vw - 320px)/(576 - 320) * (390 - 275) + 275px);
+  }
+}

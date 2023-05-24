@@ -1,0 +1,177 @@
+.special {
+  padding-bottom: 40px;
+}
+
+.special__title {
+  text-align: center;
+  margin-bottom: 45px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: var(--text);
+}
+
+.special-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.special-left-card,
+.special-right-card {
+  min-height: 250px;
+  padding-top: 30px;
+  padding-left: 25px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.special-left-card {
+  background-image: url('../img/special-1.jpg');
+}
+
+.special-right-card {
+  background-image: url('../img/special-2.jpg');
+}
+
+.special-card-discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 8px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  color: var(--white);
+  border-bottom-left-radius: 5px;
+  background-color: var(--blue);
+}
+
+.special-card-text {
+  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-card-text__title {
+  margin-bottom: 11px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: var(--text);
+}
+
+.special-card-text__descr {
+  margin-bottom: 20px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--text-light);
+  opacity: 0.5;
+}
+
+.special-card-text-price {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.special-card-text-price__real,
+.special-card-text-price__last {
+  margin-right: 7px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--greenMain);
+}
+
+.special-card-text-price__last {
+  margin-right: 15px;
+  color: var(--text-light);
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.special-card-text-price__btn {
+  padding: 7px 10px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--white);
+  border-radius: 2px;
+  background-color: var(--greenMain);
+  transition: color .3s ease-in-out
+}
+
+.special-card-text-price__btn:hover,
+.special-card-text-price__btn:focus {
+  color: var(--greenHover);
+  outline: none;
+  transition: color .3s ease-in-out
+}
+
+.special-card-remain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.special-card-remain-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--greenMain);
+}
+
+.special-card-remain-circle__number {
+  padding-top: 7px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--white);
+}
+
+.special-card-remain-circle__type {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 120%;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+
+  .special-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+
+  .special__title {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+}

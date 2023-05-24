@@ -1,0 +1,131 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+    position: absolute;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+:root {
+    --white: #ffffff;
+    --text: #555555;
+    --text-light: #515151;
+    --title-black: #2f2f2f;
+    --greenMain: #7AC751;
+    --greenHover: #44712C;
+    --blue: #00B7F1;
+    --red: #FF6868;
+    --light-blue: #F7F8FA;
+    --e3: #e3e3e3;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Regular"),
+    url("../fonts/Rubik-Regular.woff") format("woff"),
+    url("../fonts/Rubik-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik-Medium"),
+    url("../fonts/Rubik-Medium.woff") format("woff"),
+    url("../fonts/Rubik-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish-Regular"),
+    url("../fonts/Mulish-Regular.woff") format("woff"),
+    url("../fonts/Mulish-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish-SemiBold"),
+    url("../fonts/Mulish-SemiBold.woff") format("woff"),
+    url("../fonts/Mulish-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish-Bold"),
+    url("../fonts/Mulish-Bold.woff") format("woff"),
+    url("../fonts/Mulish-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Rubik', 'Mulish', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.my-container {
+    max-width: 1440px;
+    padding-left: 135px;
+    padding-right: 135px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media (max-width: 1366px) {
+
+  .my-container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
